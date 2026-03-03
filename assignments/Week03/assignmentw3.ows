@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(-327.0, 168.0)" />
+		<node id="1" name="Corpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Corpus" position="(-193.0, 165.0)" />
+		<node id="2" name="Python Script" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" project_name="Orange3" version="" title="Python Script" position="(-30.0, 167.0)" />
+		<node id="3" name="Preprocess Text" qualified_name="orangecontrib.text.widgets.owpreprocess.OWPreprocess" project_name="Orange3-Text" version="" title="Preprocess Text" position="(125.0, 162.0)" />
+		<node id="4" name="Corpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Corpus (1)" position="(280.0, 165.0)" />
+		<node id="5" name="Word Cloud" qualified_name="orangecontrib.text.widgets.owwordcloud.OWWordCloud" project_name="Orange3-Text" version="" title="Word Cloud" position="(-123.0, 284.0)" />
+		<node id="6" name="Word Cloud" qualified_name="orangecontrib.text.widgets.owwordcloud.OWWordCloud" project_name="Orange3-Text" version="" title="Word Cloud (1)" position="(468.0, 306.0)" />
+		<node id="7" name="Bag of Words" qualified_name="orangecontrib.text.widgets.owbagofwords.OWTBagOfWords" project_name="Orange3-Text" version="" title="Bag of Words" position="(413.0, 169.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Corpus" sink_channel="Data" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Data" sink_channel="Corpus" enabled="true" source_channel_id="data" sink_channel_id="corpus" />
+		<link id="3" source_node_id="3" sink_node_id="4" source_channel="Corpus" sink_channel="Data" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+		<link id="4" source_node_id="1" sink_node_id="5" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="5" source_node_id="4" sink_node_id="7" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="6" source_node_id="7" sink_node_id="6" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVdw4AAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfcGF0aHOUXZQojB5v
+cmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApSZWNlbnRQYXRolJOUKYGUfZQojAdhYnNw
+YXRolIxdQzovVXNlcnMvcm9taWUvRG9jdW1lbnRzL0dpdEh1Yi9CQTItRGlnaXRhbEtvcmVhLS1T
+dHJvb3Blci0vZGF0YS9wcmVzaWRlbnRfc3BlZWNoZXNfc21hbGwuY3N2lIwGcHJlZml4lE6MB3Jl
+bHBhdGiUTowFdGl0bGWUjACUjAVzaGVldJRoDowLZmlsZV9mb3JtYXSUTnViaAYpgZR9lChoCYxm
+QzovVXNlcnMvcm9taWUvRG9jdW1lbnRzL0dpdEh1Yi9CQTItRGlnaXRhbEtvcmVhLS1TdHJvb3Bl
+ci0vZGF0YS9wcmVzaWRlbnRfc3BlZWNoZXNfZGVtb2NyYXRpY19lcmEuY3N2lGgLTmgMTmgNaA5o
+D2gOaBBOdWJoBimBlH2UKGgJjD5DOi9Vc2Vycy9yb21pZS9Eb3dubG9hZHMvcHJlc2lkZW50X3Nw
+ZWVjaGVzX2RlbW9jcmF0aWNfZXJhLmNzdpRoC05oDE5oDWgOaA9oDmgQTnViaAYpgZR9lChoCYww
+QzovVXNlcnMvcm9taWUvRG93bmxvYWRzL25pa2hfdGV4dGJvb2tzX2RlbW8uY3N2lGgLTmgMTmgN
+aA5oD2gOaBBOdWJoBimBlH2UKGgJjFdDOi9Vc2Vycy9yb21pZS9BcHBEYXRhL0xvY2FsL1Byb2dy
+YW1zL09yYW5nZS9MaWIvc2l0ZS1wYWNrYWdlcy9PcmFuZ2UvZGF0YXNldHMvaXJpcy50YWKUaAuM
+D3NhbXBsZS1kYXRhc2V0c5RoDIwIaXJpcy50YWKUaA1oDmgPaA5oEE51YmgGKYGUfZQoaAmMWkM6
+L1VzZXJzL3JvbWllL0FwcERhdGEvTG9jYWwvUHJvZ3JhbXMvT3JhbmdlL0xpYi9zaXRlLXBhY2th
+Z2VzL09yYW5nZS9kYXRhc2V0cy90aXRhbmljLnRhYpRoC2gdaAyMC3RpdGFuaWMudGFilGgNaA5o
+D2gOaBBOdWJoBimBlH2UKGgJjFpDOi9Vc2Vycy9yb21pZS9BcHBEYXRhL0xvY2FsL1Byb2dyYW1z
+L09yYW5nZS9MaWIvc2l0ZS1wYWNrYWdlcy9PcmFuZ2UvZGF0YXNldHMvaG91c2luZy50YWKUaAto
+HWgMjAtob3VzaW5nLnRhYpRoDWgOaA9oDmgQTnViaAYpgZR9lChoCYxgQzovVXNlcnMvcm9taWUv
+QXBwRGF0YS9Mb2NhbC9Qcm9ncmFtcy9PcmFuZ2UvTGliL3NpdGUtcGFja2FnZXMvT3JhbmdlL2Rh
+dGFzZXRzL2hlYXJ0X2Rpc2Vhc2UudGFilGgLaB1oDIwRaGVhcnRfZGlzZWFzZS50YWKUaA1oDmgP
+aA5oEE51YmgGKYGUfZQoaAmMYUM6L1VzZXJzL3JvbWllL0FwcERhdGEvTG9jYWwvUHJvZ3JhbXMv
+T3JhbmdlL0xpYi9zaXRlLXBhY2thZ2VzL09yYW5nZS9kYXRhc2V0cy9icm93bi1zZWxlY3RlZC50
+YWKUaAtoHWgMjBJicm93bi1zZWxlY3RlZC50YWKUaA1oDmgPaA5oEE51YmgGKYGUfZQoaAmMVkM6
+L1VzZXJzL3JvbWllL0FwcERhdGEvTG9jYWwvUHJvZ3JhbXMvT3JhbmdlL0xpYi9zaXRlLXBhY2th
+Z2VzL09yYW5nZS9kYXRhc2V0cy96b28udGFilGgLaB1oDIwHem9vLnRhYpRoDWgOaA9oDmgQTnVi
+ZYwLcmVjZW50X3VybHOUXZSME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAVMAAAAN
+AAADrAAAAnYAAAFUAAAAKwAAA6sAAAJ1AAAAAAAAAAAFAAAAAVQAAAArAAADqwAAAnWUjAtzaGVl
+dF9uYW1lc5R9lIwGc291cmNllEsAjAN1cmyUaA6MDWRvbWFpbl9lZGl0b3KUfZSMC19fdmVyc2lv
+bl9flEsBjBBjb250ZXh0X3NldHRpbmdzlF2UKIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwHQ29u
+dGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwJdmFyaWFibGVzlF2UaDt9lGhHXZQoXZQojA9kaXZp
+c2lvbl9udW1iZXKUjBRPcmFuZ2UuZGF0YS52YXJpYWJsZZSMEkNvbnRpbnVvdXNWYXJpYWJsZZST
+lEsAaA6IZV2UKIwJcHJlc2lkZW50lGhNjBBEaXNjcmV0ZVZhcmlhYmxllJOUSwCMH+usuOyerOyd
+uCwg67CV6re87ZicLCDsnbTrqoXrsJWUiWVdlCiMCGxvY2F0aW9ulGhTSwCMFuq1reuCtCwg6rWt
+7Jm4LCDtlbTsmbiUiWVdlCiMBGtpbmSUaFNLAIxM6rWt7ZqM7Jew7ISkLCDquLDrhZDsgqwsIOq4
+sO2DgCwg7ISx66qFL+uLtO2ZlOusuCwg7LaV7IKsLCDtmZjsmIHsgqwsIO2ajOydmJSJZV2UKIwF
+dGl0bGWUaE2MDlN0cmluZ1ZhcmlhYmxllJOUSwJoDollXZQojARkYXRllGheSwJoDollXZQojAtz
+cGVlY2hfdGV4dJRoXksCaA6JZWVzaD1LAXWMCmF0dHJpYnV0ZXOUKGhMSwKGlGhRXZQojAnrrLjs
+nqzsnbiUjAnrsJXqt7ztmJyUjAnsnbTrqoXrsJWUZYaUaFZdlCiMBuq1reuCtJSMBuq1reyZuJSM
+Bu2VtOyZuJRlhpRoWV2UKIwM6rWt7ZqM7Jew7ISklIwJ6riw64WQ7IKslIwG6riw7YOAlIwQ7ISx
+66qFL+uLtO2ZlOusuJSMBuy2leyCrJSMCe2ZmOyYgeyCrJSMBu2ajOydmJRlhpR0lIwFbWV0YXOU
+aFxLA4aUaGBLA4aUaGJLA4aUh5SMCmNsYXNzX3ZhcnOUKYwSbW9kaWZpZWRfdmFyaWFibGVzlF2U
+dWJoQimBlH2UKGhFfZQoaEddlGg7fZRoR12UKF2UKIwPZGl2aXNpb25fbnVtYmVylGhPSwBoDohl
+XZQojAlwcmVzaWRlbnSUaFNLAIxL6rmA64yA7KSRLCDquYDsmIHsgrwsIOuFuOustO2YhCwg64W4
+7YOc7JqwLCDrrLjsnqzsnbgsIOuwleq3vO2YnCwg7J2066qF67CVlIllXZQojAhsb2NhdGlvbpRo
+U0sAjB7qta3rgrQsIOq1reyZuCwg6rWt7KCcLCDtlbTsmbiUiWVdlCiMBGtpbmSUaFNLAIxt6rWt
+7ZqM7Jew7ISkLCDquLDrhZDsgqwsIOq4sO2DgCwg66eM7LCs7IKsLCDshLHrqoUv64u07ZmU66y4
+LCDsi6DrhYTsgqwsIOy2leyCrCwg7Leo7J6E7IKsLCDtmZjsmIHsgqwsIO2ajOydmJSJZV2UKIwF
+dGl0bGWUaF5LAmgOiWVdlCiMBGRhdGWUaF5LAmgOiWVdlCiMC3NwZWVjaF90ZXh0lGheSwJoDoll
+ZXNoPUsBdWhjKIwPZGl2aXNpb25fbnVtYmVylEsChpSMCXByZXNpZGVudJRdlCiMCeq5gOuMgOyk
+kZSMCeq5gOyYgeyCvJSMCeuFuOustO2YhJSMCeuFuO2DnOyasJSMCeusuOyerOyduJSMCeuwleq3
+vO2YnJSMCeydtOuqheuwlZRlhpSMCGxvY2F0aW9ulF2UKIwG6rWt64K0lIwG6rWt7Jm4lIwG6rWt
+7KCclIwG7ZW07Jm4lGWGlIwEa2luZJRdlCiMDOq1re2ajOyXsOyEpJSMCeq4sOuFkOyCrJSMBuq4
+sO2DgJSMCeunjOywrOyCrJSMEOyEseuqhS/ri7TtmZTrrLiUjAnsi6DrhYTsgqyUjAbstpXsgqyU
+jAnst6jsnoTsgqyUjAntmZjsmIHsgqyUjAbtmozsnZiUZYaUdJRoeYwFdGl0bGWUSwOGlIwEZGF0
+ZZRLA4aUjAtzcGVlY2hfdGV4dJRLA4aUh5Rofilof12UdWJoQimBlH2UKGhFfZQojAl2YXJpYWJs
+ZXOUXZSMDWRvbWFpbl9lZGl0b3KUfZRoxF2UKF2UKIwDZXJhlGhTSwCMI0F1dGhvcml0YXJpYW4s
+IENvbG9uaWFsLCBEZW1vY3JhdGljlIllXZQojAZwZXJpb2SUaFNLAIxpQ2h1bi9Sb2ggVHJhbnNp
+dGlvbmFsLCBDb2xvbmlhbCBQZXJpb2QsIERlbW9jcmF0aWMgQ29uc29saWRhdGlvbiwgRWFybHkg
+RGVtb2NyYXRpYywgUG9zdHdhciBBdXRob3JpdGFyaWFulIllXZQojAR5ZWFylGhPSwBoDohlXZQo
+jAdib29rX2lklGheSwJoDollXZQojAV0aXRsZZRoXksCaA6JZV2UKIwFbGV2ZWyUaF5LAmgOiWVd
+lCiMCWZ1bGxfdGV4dJRoXksCaA6JZWVzaD1LAXVoY4wDZXJhlF2UKIwNQXV0aG9yaXRhcmlhbpSM
+CENvbG9uaWFslIwKRGVtb2NyYXRpY5RlhpSMBnBlcmlvZJRdlCiMFUNodW4vUm9oIFRyYW5zaXRp
+b25hbJSMD0NvbG9uaWFsIFBlcmlvZJSMGERlbW9jcmF0aWMgQ29uc29saWRhdGlvbpSMEEVhcmx5
+IERlbW9jcmF0aWOUjBVQb3N0d2FyIEF1dGhvcml0YXJpYW6UZYaUjAR5ZWFylEsChpSHlGh5KIwH
+Ym9va19pZJRLA4aUjAV0aXRsZZRLA4aUjAVsZXZlbJRLA4aUjAlmdWxsX3RleHSUSwOGlHSUaH4p
+aH9dlHViZXUu
+</properties>
+		<properties node_id="1" format="pickle">gASV5QMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojBFi
+b29rLWV4Y2VycHRzLnRhYpSMGGdyaW1tLXRhbGVzLXNlbGVjdGVkLnRhYpSMGGVsZWN0aW9uLXR3
+ZWV0cy0yMDE2LnRhYpSMF2ZyaWVuZHMtdHJhbnNjcmlwdHMudGFilIwMYW5kZXJzZW4udGFilGWM
+E3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAaYAAACXAAADWQAAAesAAAGnAAAAtQAA
+A1gAAAHqAAAAAAAAAAAFAAAAAacAAAC1AAADWAAAAeqUjAtfX3ZlcnNpb25fX5RLAowQY29udGV4
+dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiM
+BnZhbHVlc5R9lCiMCGxhbmd1YWdllIwCa2+USv7///+GlIwOdGl0bGVfdmFyaWFibGWUjAtzcGVl
+Y2hfdGV4dJRLZ4aUjAp1c2VkX2F0dHJzlF2UaBlLZ4aUYUr9////hpRoC0sCdYwKYXR0cmlidXRl
+c5R9lCiMD2RpdmlzaW9uX251bWJlcpRLAowJcHJlc2lkZW50lEsBjAhsb2NhdGlvbpRLAYwEa2lu
+ZJRLAXWMBW1ldGFzlH2UKIwFdGl0bGWUSwOMBGRhdGWUSwOMC3NwZWVjaF90ZXh0lEsDdYwOZG9j
+dW1lbnRzX2hhc2iUihGrKSVzTD38GF41Poo4c3THAIwIbGFuZ3VhZ2WUTnViaBApgZR9lChoE32U
+KIwIbGFuZ3VhZ2WUjAJrb5RK/v///4aUjA50aXRsZV92YXJpYWJsZZSMC3NwZWVjaF90ZXh0lEtn
+hpSMCnVzZWRfYXR0cnOUXZRoM0tnhpRhSv3///+GlGgLSwJ1aB99lCiMD2RpdmlzaW9uX251bWJl
+cpRLAowJcHJlc2lkZW50lEsBjAhsb2NhdGlvbpRLAYwEa2luZJRLAXVoJX2UKIwFdGl0bGWUSwOM
+BGRhdGWUSwOMC3NwZWVjaF90ZXh0lEsDdWgqihDhiYQ69NfPxfT6hWu9+aAcaCtOdWJoECmBlH2U
+KGgTfZQojAhsYW5ndWFnZZSMAmVulEr+////hpSMDnRpdGxlX3ZhcmlhYmxllE5K/v///4aUjAp1
+c2VkX2F0dHJzlF2UjARUZXh0lEtnhpRhSv3///+GlGgLSwJ1aB99lIwIQ2F0ZWdvcnmUSwFzaCV9
+lGhMSwNzaCqKEaw1BwQZtAhLt7rkdtqukZcAaCuMAmVulHViZXUu
+</properties>
+		<properties node_id="2" format="literal">{'controlAreaVisible': True, 'currentScriptIndex': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xef\x00\x00\x00B\x00\x00\x04\x10\x00\x00\x02@\x00\x00\x00\xf0\x00\x00\x00`\x00\x00\x04\x0f\x00\x00\x02?\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x00\xf0\x00\x00\x00`\x00\x00\x04\x0f\x00\x00\x02?', 'scriptLibrary': [{'name': 'Table from numpy', 'script': 'import numpy as np\nfrom Orange.data import Table, Domain, ContinuousVariable, DiscreteVariable\n\ndomain = Domain([ContinuousVariable("age"),\n                 ContinuousVariable("height"),\n                 DiscreteVariable("gender", values=("M", "F"))])\narr = np.array([\n  [25, 186, 0],\n  [30, 164, 1]])\nout_data = Table.from_numpy(domain, arr)\n', 'filename': None}, {'name': 'custom_preprocessing_windows-users.py', 'script': '"""\nKorean Text Preprocessing for Orange Data Mining (Windows)\nRequires kiwipiepy pre-installed, then does POS-based tokenization and filtering.\n"""\n\nimport re\nimport pandas as pd\nfrom Orange.data import Table, Domain, StringVariable\nfrom kiwipiepy import Kiwi\n\nkiwi = Kiwi()\n\n# ===== CONFIGURATION =====\nTEXT_COLUMN = \'full_text\'  # &lt;&lt;&lt; CHANGE to match your corpus column name\n\n# POS tags to keep — uncomment tags you want to include\nPOS_TAGS = [\n    \'NNG\',  # Common noun (일반명사)\n    \'NNP\',  # Proper noun (고유명사)\n    #\'VV\',  # Verb (동사)\n    #\'VA\',  # Adjective (형용사)\n    #\'MAG\', # Adverb (부사)\n]\n\nREMOVE_NUMBERS = True\nMIN_TOKEN_LENGTH = 2\nMIN_DOC_FREQ = 0.1   # Minimum proportion of documents a word must appear in (10%)\nMAX_DOC_FREQ = 0.9   # Maximum proportion of documents a word can appear in (90%)\n\nSTOPWORDS = {\n    \'있다\', \'없다\', \'되다\', \'하다\', \'그\', \'저\', \'이\', \'것\', \'등\', \'및\',\n    \'수\', \'때\', \'년\', \'월\', \'일\', \'더\', \'또\', \'즉\', \'통해\', \'위해\'\n}\n\n# ===== PREPROCESSING =====\ndef clean_text(text):\n    if pd.isna(text):\n        return ""\n    text = str(text)\n    text = re.sub(r\'http[s]?://\\S+\', \'\', text)\n    text = re.sub(r\'\\S+@\\S+\', \'\', text)\n    text = re.sub(r\'@\\w+\', \'\', text)\n    text = re.sub(r\'[^\\w\\s\\u3131-\\u3163\\uac00-\\ud7a3\\u1100-\\u11ff]\', \' \', text)\n    text = re.sub(r\'\\s+\', \' \', text).strip()\n    return text\n\ndef preprocess(text):\n    text = clean_text(text)\n    if not text:\n        return ""\n\n    tokens = kiwi.tokenize(text)\n    morphemes = [token.form for token in tokens if token.tag in POS_TAGS]\n\n    filtered = []\n    for w in morphemes:\n        if w in STOPWORDS:\n            continue\n        if len(w) &lt; MIN_TOKEN_LENGTH:\n            continue\n        if REMOVE_NUMBERS and w.isdigit():\n            continue\n        filtered.append(w)\n\n    return \' \'.join(filtered)\n\n# ===== PROCESS DATA =====\ntry:\n    text_data = in_data.documents\nexcept AttributeError:\n    text_column_index = in_data.domain.index(TEXT_COLUMN)\n    text_data = [str(row[text_column_index]) for row in in_data]\n\nprocessed = [preprocess(text) for text in text_data]\n\n# ===== DOCUMENT FREQUENCY FILTERING =====\nif MIN_DOC_FREQ &gt; 0 or MAX_DOC_FREQ &lt; 1.0:\n    from collections import Counter\n\n    word_doc_counts = Counter()\n    for doc in processed:\n        unique_words = set(doc.split())\n        word_doc_counts.update(unique_words)\n\n    total_docs = len(processed)\n\n    filtered_processed = []\n    for doc in processed:\n        words = doc.split()\n        kept_words = [\n            w for w in words\n            if word_doc_counts[w] / total_docs &gt;= MIN_DOC_FREQ\n            and word_doc_counts[w] / total_docs &lt;= MAX_DOC_FREQ\n        ]\n        filtered_processed.append(\' \'.join(kept_words))\n\n    processed = filtered_processed\n    print(f"✓ Applied document frequency filtering (keep {MIN_DOC_FREQ:.0%}–{MAX_DOC_FREQ:.0%})")\n\n# ===== OUTPUT =====\nnew_var = StringVariable(\'processed_text\')\nnew_domain = Domain(\n    in_data.domain.attributes,\n    in_data.domain.class_vars,\n    in_data.domain.metas + (new_var,)\n)\n\nout_data = in_data.transform(new_domain)\nwith out_data.unlocked():\n    out_data.get_column(new_var)[:] = processed\n\nprint(f"✓ Processed {len(processed)} documents")\n', 'filename': 'C:/Users/romie/Documents/GitHub/BA2-DigitalKorea--Strooper-/data/custom_preprocessing_windows-users.py'}], 'scriptText': '"""\nKorean Text Preprocessing for Orange Data Mining (Windows)\nRequires kiwipiepy pre-installed, then does POS-based tokenization and filtering.\n"""\n\nimport re\nimport pandas as pd\nfrom Orange.data import Table, Domain, StringVariable\nfrom kiwipiepy import Kiwi\n\nkiwi = Kiwi()\n\n# ===== CONFIGURATION =====\nTEXT_COLUMN = \'speech_text\'  # &lt;&lt;&lt; CHANGE to match your corpus column name\n\n# POS tags to keep — uncomment tags you want to include\nPOS_TAGS = [\n    \'NNG\',  # Common noun (일반명사)\n    \'NNP\',  # Proper noun (고유명사)\n    #\'VV\',  # Verb (동사)\n    #\'VA\',  # Adjective (형용사)\n    #\'MAG\', # Adverb (부사)\n]\n\nREMOVE_NUMBERS = True\nMIN_TOKEN_LENGTH = 2\nMIN_DOC_FREQ = 0.1   # Minimum proportion of documents a word must appear in (10%)\nMAX_DOC_FREQ = 0.9   # Maximum proportion of documents a word can appear in (90%)\n\nSTOPWORDS = {\n    \'있다\', \'없다\', \'되다\', \'하다\', \'그\', \'저\', \'이\', \'것\', \'등\', \'및\',\n    \'수\', \'때\', \'년\', \'월\', \'일\', \'더\', \'또\', \'즉\', \'통해\', \'위해\'\n}\n\n# ===== PREPROCESSING =====\ndef clean_text(text):\n    if pd.isna(text):\n        return ""\n    text = str(text)\n    text = re.sub(r\'http[s]?://\\S+\', \'\', text)\n    text = re.sub(r\'\\S+@\\S+\', \'\', text)\n    text = re.sub(r\'@\\w+\', \'\', text)\n    text = re.sub(r\'[^\\w\\s\\u3131-\\u3163\\uac00-\\ud7a3\\u1100-\\u11ff]\', \' \', text)\n    text = re.sub(r\'\\s+\', \' \', text).strip()\n    return text\n\ndef preprocess(text):\n    text = clean_text(text)\n    if not text:\n        return ""\n\n    tokens = kiwi.tokenize(text)\n    morphemes = [token.form for token in tokens if token.tag in POS_TAGS]\n\n    filtered = []\n    for w in morphemes:\n        if w in STOPWORDS:\n            continue\n        if len(w) &lt; MIN_TOKEN_LENGTH:\n            continue\n        if REMOVE_NUMBERS and w.isdigit():\n            continue\n        filtered.append(w)\n\n    return \' \'.join(filtered)\n\n# ===== PROCESS DATA =====\ntry:\n    text_data = in_data.documents\nexcept AttributeError:\n    text_column_index = in_data.domain.index(TEXT_COLUMN)\n    text_data = [str(row[text_column_index]) for row in in_data]\n\nprocessed = [preprocess(text) for text in text_data]\n\n# ===== DOCUMENT FREQUENCY FILTERING =====\nif MIN_DOC_FREQ &gt; 0 or MAX_DOC_FREQ &lt; 1.0:\n    from collections import Counter\n\n    word_doc_counts = Counter()\n    for doc in processed:\n        unique_words = set(doc.split())\n        word_doc_counts.update(unique_words)\n\n    total_docs = len(processed)\n\n    filtered_processed = []\n    for doc in processed:\n        words = doc.split()\n        kept_words = [\n            w for w in words\n            if word_doc_counts[w] / total_docs &gt;= MIN_DOC_FREQ\n            and word_doc_counts[w] / total_docs &lt;= MAX_DOC_FREQ\n        ]\n        filtered_processed.append(\' \'.join(kept_words))\n\n    processed = filtered_processed\n    print(f"✓ Applied document frequency filtering (keep {MIN_DOC_FREQ:.0%}–{MAX_DOC_FREQ:.0%})")\n\n# ===== OUTPUT =====\nnew_var = StringVariable(\'processed_text\')\nnew_domain = Domain(\n    in_data.domain.attributes,\n    in_data.domain.class_vars,\n    in_data.domain.metas + (new_var,)\n)\n\nout_data = in_data.transform(new_domain)\nwith out_data.unlocked():\n    out_data.get_column(new_var)[:] = processed\n\nprint(f"✓ Processed {len(processed)} documents")\n', 'splitterState': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xa1\x00\x00\x00a\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', 'vimModeEnabled': False, '__version__': 2}</properties>
+		<properties node_id="3" format="pickle">gASVLwMAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAANoAAABCAAAEJQAAAkAAAADbAAAAYAAABCQAAAI/
+AAAAAAAAAAAFAAAAANsAAABgAAAEJAAAAj+UjA5zdG9yZWRzZXR0aW5nc5R9lCiMBG5hbWWUjACU
+jA1wcmVwcm9jZXNzb3JzlF2UKIwUcHJlcHJvY2Vzcy50cmFuc2Zvcm2UfZSGlIwTcHJlcHJvY2Vz
+cy50b2tlbml6ZZR9lIaUjBFwcmVwcm9jZXNzLmZpbHRlcpR9lCiMB2Fic19lbmSUSwqMCWFic19z
+dGFydJRLAYwJZnJlcV90eXBllEsAjAhpbmNsX251bZSJjAtpbnZhbGlkYXRlZJSJjAhsYW5ndWFn
+ZZSMAmVulIwHbHhfbGlzdJRdlIwHbHhfcGF0aJROjAdtZXRob2RzlF2UKEsASwNljAhuX3Rva2Vu
+c5RLZIwHcGF0dGVybpSMW1wufCx8Onw7fCF8XD98XCh8XCl8XHx8XCt8XCd8XCJ84oCYfOKAmXzi
+gJx84oCdfFwnfFzigJl84oCmfFwtfOKAk3zigJR8XCR8JnxcKnw+fDx8XC98XFt8XF2UjAhwb3Nf
+dGFnc5SMCU5PVU4sVkVSQpSMB3JlbF9lbmSURz/szMzMzMzNjAlyZWxfc3RhcnSURz+5mZmZmZma
+jAdzd19saXN0lF2UjB5vcmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApSZWNlbnRQYXRo
+lJOUKYGUfZQojAdhYnNwYXRolIxTQzovVXNlcnMvcm9taWUvRG9jdW1lbnRzL0dpdEh1Yi9CQTIt
+RGlnaXRhbEtvcmVhLS1TdHJvb3Blci0vZGF0YS9zdG9wd29yZHMgZmlsZS50eHSUjAZwcmVmaXiU
+TowHcmVscGF0aJROjAV0aXRsZZRoCIwFc2hlZXSUaAiMC2ZpbGVfZm9ybWF0lE51YmGMB3N3X3Bh
+dGiUaCt1hpRldYwLX192ZXJzaW9uX1+USwR1Lg==
+</properties>
+		<properties node_id="4" format="pickle">gASVzwQAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojBFi
+b29rLWV4Y2VycHRzLnRhYpSMGGdyaW1tLXRhbGVzLXNlbGVjdGVkLnRhYpSMGGVsZWN0aW9uLXR3
+ZWV0cy0yMDE2LnRhYpSMF2ZyaWVuZHMtdHJhbnNjcmlwdHMudGFilIwMYW5kZXJzZW4udGFilGWM
+E3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAaYAAACXAAADWQAAAesAAAGnAAAAtQAA
+A1gAAAHqAAAAAAAAAAAFAAAAAacAAAC1AAADWAAAAeqUjAtfX3ZlcnNpb25fX5RLAowQY29udGV4
+dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiM
+BnZhbHVlc5R9lCiMCGxhbmd1YWdllIwCa2+USv7///+GlIwOdGl0bGVfdmFyaWFibGWUjA5wcm9j
+ZXNzZWRfdGV4dJRLZ4aUjAp1c2VkX2F0dHJzlF2UaBlLZ4aUYUr9////hpRoC0sCdYwKYXR0cmli
+dXRlc5R9lCiMD2RpdmlzaW9uX251bWJlcpRLAowJcHJlc2lkZW50lEsBjAhsb2NhdGlvbpRLAYwE
+a2luZJRLAXWMBW1ldGFzlH2UKIwFdGl0bGWUSwOMBGRhdGWUSwOMC3NwZWVjaF90ZXh0lEsDjA5w
+cm9jZXNzZWRfdGV4dJRLA3WMDmRvY3VtZW50c19oYXNolIoQvHuKj5KM2gJeNaqIfoyRHWgVaBZ1
+YmgQKYGUfZQoaBN9lChoFYwCZW6USv7///+GlGgYTkr+////hpRoG12UjARUZXh0lEtnhpRhSv3/
+//+GlGgLSwJ1aB99lIwIQ2F0ZWdvcnmUSwFzaCV9lIwEVGV4dJRLA3NoK4oRrDUHBBm0CEu3uuR2
+2q6RlwBoFYwCZW6UdWJoECmBlH2UKGgTfZQojAhsYW5ndWFnZZSMAmtvlEr+////hpSMDnRpdGxl
+X3ZhcmlhYmxllGgnS2eGlIwKdXNlZF9hdHRyc5RdlGgnS2eGlGFK/f///4aUaAtLAnVoH32UKIwP
+ZGl2aXNpb25fbnVtYmVylEsCjAlwcmVzaWRlbnSUSwGMCGxvY2F0aW9ulEsBjARraW5klEsBdWgl
+fZQojAV0aXRsZZRLA4wEZGF0ZZRLA4wLc3BlZWNoX3RleHSUSwOMDnByb2Nlc3NlZF90ZXh0lEsD
+dWgrihGrKSVzTD38GF41Poo4c3THAGgVaD91YmgQKYGUfZQoaBN9lCiMCGxhbmd1YWdllIwCa2+U
+Sv7///+GlIwOdGl0bGVfdmFyaWFibGWUaFBLZ4aUjAp1c2VkX2F0dHJzlF2UaFBLZ4aUYUr9////
+hpRoC0sCdWgffZQojA9kaXZpc2lvbl9udW1iZXKUSwKMCXByZXNpZGVudJRLAYwIbG9jYXRpb26U
+SwGMBGtpbmSUSwF1aCV9lCiMBXRpdGxllEsDjARkYXRllEsDjAtzcGVlY2hfdGV4dJRLA4wOcHJv
+Y2Vzc2VkX3RleHSUSwN1aCuKEWnMkyiXhPSYQ7n5dK3fN+UAaBVoVXViZXUu
+</properties>
+		<properties node_id="5" format="pickle">gASVtwAAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAADVAAAAQgAABCsAAAJAAAAA1gAAAGAAAAQqAAACPwAAAAAAAAAABQAAAADW
+AAAAYAAABCoAAAI/lIwOc2VsZWN0ZWRfd29yZHOUj5SMC3dvcmRzX2NvbG9ylIiMCndvcmRzX3Rp
+bHSUSwCMC19fdmVyc2lvbl9flEsBdS4=
+</properties>
+		<properties node_id="6" format="pickle">gASVtwAAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAADVAAAAQgAABCsAAAJAAAAA1gAAAGAAAAQqAAACPwAAAAAAAAAABQAAAADW
+AAAAYAAABCoAAAI/lIwOc2VsZWN0ZWRfd29yZHOUj5SMC3dvcmRzX2NvbG9ylIiMCndvcmRzX3Rp
+bHSUSwCMC19fdmVyc2lvbl9flEsBdS4=
+</properties>
+		<properties node_id="7" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'hidden_cb': True, 'normalization': '(None)', 'savedWidgetGeometry': None, 'wglobal': '(None)', 'wlocal': 'Count', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
